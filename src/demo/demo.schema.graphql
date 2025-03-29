@@ -1,0 +1,13 @@
+type Demo {
+    id: ID!
+    title: String!
+    price: Int!
+}
+
+type Query {
+    demos: [Demo]
+}
+
+type Mutation {
+    addDemo(title: String!, price: Int!): Demo
+}
